@@ -51,16 +51,43 @@ int countApples(void) {
 
 @synthesize name = _name; // NSString *_name; ivar
 
+// - = Instance method
+- (instancetype)initWithName:(NSString *)name
+					   notes:(NSString *)notes
+						date:(NSDate *)date {
+	if (self = [super init]) { // super init is the foundation for all Objects in Objective-C
+		_name = name;
+		_notes = notes;
+		_date = date;
+	}
+	return self;
+}
+
+// + = Class / Static Method
++ (LSITask *)taskWithName:(NSString *)name {
+	return [[LSITask alloc] initWithName:name notes:@"" date:nil];
+}
+
++ (int)numberOfTasksCreated {
+	return 57;
+}
+
+- (void)completeTask {
+	NSLog(@"Completed task: %@", self.name);
+}
+
+
+
 
 // Objective-C Method (Instance Functions)
-- (LSITask *)createTask {
-	return [[LSITask alloc] init];
-}
-
-- (LSITask *)createTaskWithTitle:(NSString *)title {
-	// TODO: set the title
-	return [[LSITask alloc] init];
-}
+//- (LSITask *)createTask {
+//	return [[LSITask alloc] init];
+//}
+//
+//- (LSITask *)createTaskWithTitle:(NSString *)title {
+//	// TODO: set the title
+//	return [[LSITask alloc] init];
+//}
 
 // Override the Default Property
 

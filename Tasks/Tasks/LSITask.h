@@ -25,7 +25,6 @@ int countApples(void);
 
 // Public properties
 
-@property NSString *name;
 
 // Autogenerate the setter / getter (depending on property attributes)
 
@@ -40,10 +39,20 @@ int countApples(void);
 //	return _name;
 //}
 
-
+@property NSString *name;
 @property NSString *notes;
 @property NSDate *date;
 
 // Public methods
+
+- (instancetype)initWithName:(NSString *)name
+					   notes:(NSString *)notes
+						date:(NSDate *)date;
+
++ (LSITask *)taskWithName:(NSString *)name;
++ (int)numberOfTasksCreated;
+
+- (void)completeTask;
+
 
 @end

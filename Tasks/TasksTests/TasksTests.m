@@ -54,9 +54,28 @@
 	// Getter with method call
 	endDate = [task date];
 	
+}
+
+- (void)testTaskInit {
+	LSITask *task = [[LSITask alloc] initWithName:@"Bake a Cake"
+											notes:@"Find recipe and bake cake tomorrow"
+											 date:[NSDate date]];
 	
+	NSLog(@"Task: %@", task.name);
+	
+	LSITask *washTheCar = [LSITask taskWithName:@"Wash the Car"];
+	
+	NSLog(@"Task: %@", washTheCar.name);
+	
+	int numTasks = [LSITask numberOfTasksCreated];
+	NSLog(@"Tasks created: %d", numTasks);
+	
+//	[LSITask completeTask]; // NOT going to work
+	
+	[washTheCar completeTask];
 	
 }
+
 
 
 
