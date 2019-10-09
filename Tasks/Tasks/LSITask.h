@@ -12,7 +12,8 @@
 
 @class LSITask;
 LSITask *createTask(void);	// Function declaration
-
+LSITask *createTaskWithTitle(NSString *title);
+int countApples(void);
 
 @interface LSITask : NSObject {
 	// Public ivars

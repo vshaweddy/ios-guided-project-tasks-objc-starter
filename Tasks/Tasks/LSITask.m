@@ -12,7 +12,7 @@
 // let zero = 0			 // Swift: Constant
  const int zero = 0;	 // Constant
 
-
+// Public
 // C Function
 LSITask *createTask(void) {
 //	zero = 34; // Can't change this
@@ -20,6 +20,15 @@ LSITask *createTask(void) {
 	// CGPoint(x: 5, y: 7) // Swift CGPoint struct init
 	
 	return [[LSITask alloc] init];
+}
+
+LSITask *createTaskWithTitle(NSString *title) {
+	// TODO: set task name
+	return [[LSITask alloc] init];
+}
+
+int countApples(void) {
+	return 1;
 }
 
 

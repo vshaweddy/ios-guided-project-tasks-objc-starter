@@ -17,6 +17,7 @@
 		BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */; };
 		BD08F354234E3B3900771883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD08F353234E3B3900771883 /* Main.storyboard */; };
 		BD21D02D234E417600E45282 /* LSITask.m in Sources */ = {isa = PBXBuildFile; fileRef = BD21D02C234E417600E45282 /* LSITask.m */; };
+		BD21D02F234E489E00E45282 /* LSITask.m in Sources */ = {isa = PBXBuildFile; fileRef = BD21D02C234E417600E45282 /* LSITask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD08F343234E3AF900771883 /* TasksTests.m in Sources */,
+				BD21D02F234E489E00E45282 /* LSITask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
