@@ -8,21 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LSITaskController : NSObject
+@class LSITask;
 
-// tasks array  (private)
+@interface LSITaskController : NSObject
 
 //- (instancetype)init; // NSObject already declared
 
+- (void)addTask:(LSITask *)task;
 
-// add task
-// remove task
-// count
-// taskAtIndex
+- (void)removeTask:(LSITask *)task;
 
-// complete task (more at LSITask level)
+- (NSUInteger)count;
 
-
-
+- (LSITask *)taskAtIndex:(NSUInteger)index;
 
 @end

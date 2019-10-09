@@ -40,4 +40,22 @@
 	return self;
 }
 
+- (void)addTask:(LSITask *)task {
+	[self.tasks addObject:task];
+}
+
+- (void)removeTask:(LSITask *)task {
+	[self.tasks removeObject:task];
+}
+
+- (NSUInteger)count {
+	return [self.tasks count];
+}
+
+- (LSITask *)taskAtIndex:(NSUInteger)index {
+	return [self.tasks objectAtIndex:index];
+}
+
+
+
 @end
