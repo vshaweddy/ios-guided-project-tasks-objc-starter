@@ -31,8 +31,26 @@ int countApples(void) {
 	return 1;
 }
 
+// Objective-C Code
+
+// Class Extension (Anonymous Category)
+@interface LSITask () {
+	// Private ivars
+//	NSString *_name;
+}
+
+// Private Properties
+@property NSString *identifier;
+
+// Private Outlets
+
+@end
+
 
 @implementation LSITask
+
+@synthesize name = _name; // NSString *_name; ivar
+
 
 // Objective-C Method (Instance Functions)
 - (LSITask *)createTask {
@@ -43,5 +61,19 @@ int countApples(void) {
 	// TODO: set the title
 	return [[LSITask alloc] init];
 }
+
+// Override the Default Property
+
+// NSString *_name; // Backing store (ivar)
+
+- (void)setName:(NSString *)name {
+	// validate before setting ...
+	_name = name;
+}
+
+- (NSString *)name {
+	return _name;
+}
+
 
 @end

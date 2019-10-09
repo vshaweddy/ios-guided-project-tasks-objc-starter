@@ -30,4 +30,34 @@
 
 }
 
+- (void)testTask {
+	
+	LSITask *task = [[LSITask alloc] init];
+	
+	NSTimeInterval oneHourIntoFuture = 60 * 60;
+	
+	// Dot notation = syntatic sugar
+	
+	// Setters with dot syntax
+	task.date = [NSDate dateWithTimeIntervalSinceNow:oneHourIntoFuture];
+	task.name = @"Walk the Dog";
+	task.notes = @"Walk Row 3 miles";
+	
+	NSLog(@"Task: %@", task.name);
+	
+	// Setter with method call
+	[task setDate:[NSDate date]];
+	
+	// Getter with dot syntax
+	NSDate *endDate = task.date;
+	
+	// Getter with method call
+	endDate = [task date];
+	
+	
+	
+}
+
+
+
 @end
