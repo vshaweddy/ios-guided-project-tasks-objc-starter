@@ -12,11 +12,32 @@
 @interface LSITaskController ()
 
 // Private properties
-@property NSArray *tasks;
+//@property NSArray *tasks;
+@property NSMutableArray *tasks;
 
 @end
 
+// var = variable (can change)
+// let = constant (can't change)
+
+// Mutability and Immutability
+// NSArray = immutable (constant)
+// NSMutableArray = mutable (variable we can change it)
 
 @implementation LSITaskController
+
+- (instancetype)init {
+	self = [super init];
+	if (self) {
+//		_tasks = [NSArray array];
+//		_tasks = [[NSArray alloc] init];
+//		_tasks = @[];  // Array literal: syntactic sugar
+		
+//		_tasks = [[NSMutableArray alloc] init];
+//		_tasks = [NSMutableArray array];
+		_tasks = [@[] mutableCopy];
+	}
+	return self;
+}
 
 @end

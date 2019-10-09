@@ -12,6 +12,9 @@
 
 // tasks array  (private)
 
+//- (instancetype)init; // NSObject already declared
+
+
 // add task
 // remove task
 // count
