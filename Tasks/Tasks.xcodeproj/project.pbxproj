@@ -91,10 +91,9 @@
 				BD08F327234E3AF800771883 /* AppDelegate.m */,
 				BD08F329234E3AF800771883 /* SceneDelegate.h */,
 				BD08F32A234E3AF800771883 /* SceneDelegate.m */,
-				BD08F34E234E3B3000771883 /* LSITaskDetailViewController.h */,
-				BD08F34D234E3B2F00771883 /* LSITaskDetailViewController.m */,
-				BD08F350234E3B3000771883 /* LSITasksTableViewController.h */,
-				BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */,
+				BD21D02A234E410000E45282 /* Task Model */,
+				BD21D029234E40E200E45282 /* Task Table View */,
+				BD21D028234E3F8D00E45282 /* Task Detail */,
 				BD08F353234E3B3900771883 /* Main.storyboard */,
 				BD08F332234E3AF900771883 /* Assets.xcassets */,
 				BD08F334234E3AF900771883 /* LaunchScreen.storyboard */,
@@ -111,6 +110,31 @@
 				BD08F344234E3AF900771883 /* Info.plist */,
 			);
 			path = TasksTests;
+			sourceTree = "<group>";
+		};
+		BD21D028234E3F8D00E45282 /* Task Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BD08F34E234E3B3000771883 /* LSITaskDetailViewController.h */,
+				BD08F34D234E3B2F00771883 /* LSITaskDetailViewController.m */,
+			);
+			path = "Task Detail";
+			sourceTree = "<group>";
+		};
+		BD21D029234E40E200E45282 /* Task Table View */ = {
+			isa = PBXGroup;
+			children = (
+				BD08F350234E3B3000771883 /* LSITasksTableViewController.h */,
+				BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */,
+			);
+			path = "Task Table View";
+			sourceTree = "<group>";
+		};
+		BD21D02A234E410000E45282 /* Task Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Task Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +181,7 @@
 		BD08F31B234E3AF800771883 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LSI;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Lambda, Inc";
 				TargetAttributes = {
@@ -368,6 +393,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCRLD36TZ6;
 				INFOPLIST_FILE = Tasks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCRLD36TZ6;
 				INFOPLIST_FILE = Tasks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
