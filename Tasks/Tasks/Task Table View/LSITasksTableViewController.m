@@ -20,6 +20,12 @@
 
 @implementation LSITasksTableViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	
+	[self.tableView reloadData];
+}
+
 - (LSITaskController *)controller {
 	if (_controller) { // It exists, return it
 		return _controller;
