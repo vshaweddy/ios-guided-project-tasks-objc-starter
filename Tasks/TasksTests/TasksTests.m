@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "LSITask.h" // TODO: import the LSITask into both targets
+#import "NSArray+SentenceGeneration.h"
 
 @interface TasksTests : XCTestCase
 
@@ -76,6 +77,13 @@
 	
 }
 
+- (void)testCategory {
+	
+	NSArray *words = @[@"One", @"Last", @"Thing"];
+	
+	NSLog(@"Sentence: %@", [words sentenceFromArray]);
+	
+}
 
 
 

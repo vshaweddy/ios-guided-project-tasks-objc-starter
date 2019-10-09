@@ -20,6 +20,8 @@
 		BD21D02F234E489E00E45282 /* LSITask.m in Sources */ = {isa = PBXBuildFile; fileRef = BD21D02C234E417600E45282 /* LSITask.m */; };
 		BD21D032234E55C400E45282 /* LSITaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD21D031234E55C400E45282 /* LSITaskController.m */; };
 		BD21D033234E55D000E45282 /* LSITaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD21D031234E55C400E45282 /* LSITaskController.m */; };
+		BD21D03C234E652B00E45282 /* NSArray+SentenceGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = BD21D03B234E652B00E45282 /* NSArray+SentenceGeneration.m */; };
+		BD21D03D234E65BA00E45282 /* NSArray+SentenceGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = BD21D03B234E652B00E45282 /* NSArray+SentenceGeneration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		BD21D02C234E417600E45282 /* LSITask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITask.m; sourceTree = "<group>"; };
 		BD21D030234E55C400E45282 /* LSITaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSITaskController.h; sourceTree = "<group>"; };
 		BD21D031234E55C400E45282 /* LSITaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSITaskController.m; sourceTree = "<group>"; };
+		BD21D03A234E652B00E45282 /* NSArray+SentenceGeneration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SentenceGeneration.h"; sourceTree = "<group>"; };
+		BD21D03B234E652B00E45282 /* NSArray+SentenceGeneration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SentenceGeneration.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				BD21D02C234E417600E45282 /* LSITask.m */,
 				BD21D030234E55C400E45282 /* LSITaskController.h */,
 				BD21D031234E55C400E45282 /* LSITaskController.m */,
+				BD21D03A234E652B00E45282 /* NSArray+SentenceGeneration.h */,
+				BD21D03B234E652B00E45282 /* NSArray+SentenceGeneration.m */,
 				BD21D02A234E410000E45282 /* Task Model */,
 				BD21D029234E40E200E45282 /* Task Table View */,
 				BD21D028234E3F8D00E45282 /* Task Detail */,
@@ -251,6 +257,7 @@
 			files = (
 				BD21D032234E55C400E45282 /* LSITaskController.m in Sources */,
 				BD08F328234E3AF800771883 /* AppDelegate.m in Sources */,
+				BD21D03C234E652B00E45282 /* NSArray+SentenceGeneration.m in Sources */,
 				BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */,
 				BD08F351234E3B3000771883 /* LSITaskDetailViewController.m in Sources */,
 				BD21D02D234E417600E45282 /* LSITask.m in Sources */,
@@ -266,6 +273,7 @@
 				BD08F343234E3AF900771883 /* TasksTests.m in Sources */,
 				BD21D033234E55D000E45282 /* LSITaskController.m in Sources */,
 				BD21D02F234E489E00E45282 /* LSITask.m in Sources */,
+				BD21D03D234E65BA00E45282 /* NSArray+SentenceGeneration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
