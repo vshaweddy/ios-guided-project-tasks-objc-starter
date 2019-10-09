@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "LSITask.h" // TODO: import the LSITask into both targets
 
 @interface TasksTests : XCTestCase
 
@@ -14,24 +15,15 @@
 
 @implementation TasksTests
 
-- (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
+- (void)testCFunctions {
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-}
+	CGPoint point = CGPointMake(5, 7);
+	NSLog(@"Point: %f, %f", point.x, point.y);
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
+//	LSITask *task = 
+	
+	
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
 }
 
 @end
