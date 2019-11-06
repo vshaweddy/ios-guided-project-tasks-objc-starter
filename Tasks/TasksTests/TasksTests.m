@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "LSITask.h" // TODO: import the LSITask into both targets
+//#import "../Tasks/Task Model/LSITask.h"
 
 @interface TasksTests : XCTestCase
 
@@ -15,12 +15,7 @@
 
 @implementation TasksTests
 
-- (void)testCFunctions {
-
-	CGPoint point = CGPointMake(5, 7);
-	NSLog(@"Point: %f, %f", point.x, point.y);
-
-//	LSITask *task = 
+- (void)testCode {
 	
 	
 
