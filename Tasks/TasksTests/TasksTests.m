@@ -7,7 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-//#import "../Tasks/Task Model/LSITask.h"
+#import "../Tasks/Model/LSITask.h"
+//#import "LSITask.h"
 
 @interface TasksTests : XCTestCase
 
@@ -16,6 +17,9 @@
 @implementation TasksTests
 
 - (void)testCode {
+	
+
+	LSITask *task = [[LSITask alloc] init];
 	
 	
 
