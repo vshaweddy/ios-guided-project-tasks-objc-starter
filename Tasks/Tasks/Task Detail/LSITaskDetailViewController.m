@@ -10,6 +10,8 @@
 
 @interface LSITaskDetailViewController ()
 
+// MARK: - Properties
+
 @property (nonatomic, strong) IBOutlet UITextField *nameTextField;
 @property (nonatomic, strong) IBOutlet UISegmentedControl *priorityControl;
 @property (nonatomic, strong) IBOutlet UITextView *notesTextView;
@@ -19,8 +21,7 @@
 
 @implementation LSITaskDetailViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     [self updateViews];
@@ -28,14 +29,16 @@
 
 // MARK: - Actions
 
-- (IBAction)save:(id)sender {
-
+- (IBAction)saveButtonPressed:(id)sender {
+	
+	// TODO: Implement the save logic
+	// TODO: Dismiss the view controller
 }
 
-// MARK: - Private
+// MARK: - Private methods
 
 - (void)updateViews {
-    
+    // TODO: Update the IBOutlets with the provided Task
 }
 
 // MARK: - Properties

@@ -16,26 +16,32 @@
 
 @implementation LSITasksTableViewController
 
+// TODO: Implement a initFromCoder method
 
 // MARK: - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	#warning FIXME
+	
+	// TODO: Return the number of tasks from the controller
 	return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-#warning FIXME
+
+	// TODO: Create a table view cell with the Task name and formatted date
     return [[UITableViewCell alloc] init];
 }
 
 // MARK: - Navigation
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	// TODO: Implement the prepareForSegue method for creating / editing a task
+}
+
 // MARK: - Properties
 
 @synthesize dateFormatter = _dateFormatter;
-- (NSDateFormatter *)dateFormatter
-{
+- (NSDateFormatter *)dateFormatter {
     if (!_dateFormatter) {
         _dateFormatter = [[NSDateFormatter alloc] init];
         _dateFormatter.dateStyle = NSDateFormatterShortStyle;
