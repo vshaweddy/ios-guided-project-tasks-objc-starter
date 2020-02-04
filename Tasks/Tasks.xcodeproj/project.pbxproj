@@ -16,6 +16,8 @@
 		BD08F351234E3B3000771883 /* LSITaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F34D234E3B2F00771883 /* LSITaskDetailViewController.m */; };
 		BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */; };
 		BD08F354234E3B3900771883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD08F353234E3B3900771883 /* Main.storyboard */; };
+		E37BF86B23E88E92001958B8 /* VVSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E37BF86A23E88E92001958B8 /* VVSTask.m */; };
+		E37BF86C23E904EF001958B8 /* VVSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E37BF86A23E88E92001958B8 /* VVSTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		BD08F34F234E3B3000771883 /* LSITasksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSITasksTableViewController.m; sourceTree = "<group>"; };
 		BD08F350234E3B3000771883 /* LSITasksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSITasksTableViewController.h; sourceTree = "<group>"; };
 		BD08F353234E3B3900771883 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E37BF86923E88E92001958B8 /* VVSTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVSTask.h; sourceTree = "<group>"; };
+		E37BF86A23E88E92001958B8 /* VVSTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVSTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				BD08F327234E3AF800771883 /* AppDelegate.m */,
 				BD08F329234E3AF800771883 /* SceneDelegate.h */,
 				BD08F32A234E3AF800771883 /* SceneDelegate.m */,
+				E37BF86923E88E92001958B8 /* VVSTask.h */,
+				E37BF86A23E88E92001958B8 /* VVSTask.m */,
 				BD21D029234E40E200E45282 /* Task Table View */,
 				BD21D028234E3F8D00E45282 /* Task Detail */,
 				BD08F353234E3B3900771883 /* Main.storyboard */,
@@ -173,7 +179,7 @@
 		BD08F31B234E3AF800771883 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = LSI;
+				CLASSPREFIX = VVS;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Lambda, Inc";
 				TargetAttributes = {
@@ -231,6 +237,7 @@
 			files = (
 				BD08F328234E3AF800771883 /* AppDelegate.m in Sources */,
 				BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */,
+				E37BF86B23E88E92001958B8 /* VVSTask.m in Sources */,
 				BD08F351234E3B3000771883 /* LSITaskDetailViewController.m in Sources */,
 				BD08F339234E3AF900771883 /* main.m in Sources */,
 				BD08F32B234E3AF800771883 /* SceneDelegate.m in Sources */,
@@ -241,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37BF86C23E904EF001958B8 /* VVSTask.m in Sources */,
 				BD08F343234E3AF900771883 /* TasksTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

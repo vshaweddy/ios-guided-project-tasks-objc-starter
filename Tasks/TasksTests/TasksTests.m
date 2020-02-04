@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 //#import "../Tasks/Model/LSITask.h"  // #import bug? may need relative path to a Model group
-//#import "LSITask.h"
+#import "VVSTask.h"
 
 @interface TasksTests : XCTestCase
 
@@ -22,14 +22,18 @@
 // 3. If you use a framework like MapKit, you may need to add the framework to your main target
 
 - (void)testCode {
-	printf("Use an Objective-C unit test like a Playground scratch pad");
-	
-	// Create a task model object
-	// LSITask *task = [[LSITask alloc] init];
-	
-	// Try creating other objects or calling methods to verify you understand
-	// Objective-C code.
-
+	// String literal
+    NSString *name = @"Wash dishes";
+    
+    // print("Task: \(name)")
+    printf("\n"); // make it easy to read
+    NSLog(@"Task: %@", name); // %@ = object token
+    
+    // C printing function (print formatted)
+    printf("Task: %s\n", name.UTF8String); // %s = c-string
+    printf("\n"); // make it easy to read
+    
+    VVSTask *task = [[VVSTask alloc] init];
 }
 
 @end
